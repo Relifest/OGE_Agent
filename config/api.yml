@@ -1,0 +1,2 @@
+DATA_API_URL: http://www.openearth.org.cn/api/data-product/get
+TIMEOUT: 10

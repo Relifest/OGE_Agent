@@ -1,0 +1,5 @@
+external_data_path: data/external/records.csv
+
+gaodekey: b7dcd72894257e12250db1d11501773d
+gaode_base_url: https://restapi.amap.com
+gaode_timeout: 3.0

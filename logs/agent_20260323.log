@@ -1,0 +1,168 @@
+2026-03-23 16:50:11,241 - agent - ERROR - vector_store.py:145 - [加载知识库]D:\Projects\OGE-Agent\OGE-Agent\data/basic_info\oge-develop-guidance.html加载失败：<ConnectionNotExistException: (code=1, message=should create connection first.)>
+Traceback (most recent call last):
+  File "D:\Projects\OGE-Agent\OGE-Agent\rag\vector_store.py", line 139, in load_document
+    self.vector_store.add_documents(split_document)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\langchain_milvus\vectorstores\milvus.py", line 2303, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\langchain_milvus\vectorstores\milvus.py", line 1402, in add_texts
+    return self.add_embeddings(
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\langchain_milvus\vectorstores\milvus.py", line 1482, in add_embeddings
+    self._init(**kwargs)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\langchain_milvus\vectorstores\milvus.py", line 733, in _init
+    self._extract_fields()
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\langchain_milvus\vectorstores\milvus.py", line 1018, in _extract_fields
+    if isinstance(self.col, Collection):
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\langchain_milvus\vectorstores\milvus.py", line 580, in col
+    self._col_cache = Collection(self.collection_name, using=self.alias)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\orm\collection.py", line 120, in __init__
+    conn, context = self._get_connection(**kwargs)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\orm\collection.py", line 192, in _get_connection
+    handler = connections._fetch_handler(self._using)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\orm\connections.py", line 571, in _fetch_handler
+    raise ConnectionNotExistException(message=ExceptionsMessage.ConnectFirst)
+pymilvus.exceptions.ConnectionNotExistException: <ConnectionNotExistException: (code=1, message=should create connection first.)>
+2026-03-23 16:51:07,653 - agent - ERROR - vector_store.py:145 - [加载知识库]D:\Projects\OGE-Agent\OGE-Agent\data/basic_info\应用开发.html加载失败：<DataNotMatchException: (code=1, message=Insert missed an field `source` to collection without set nullable==true or set default_value)>
+Traceback (most recent call last):
+  File "D:\Projects\OGE-Agent\OGE-Agent\rag\vector_store.py", line 139, in load_document
+    self.vector_store.add_documents(split_document)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\langchain_milvus\vectorstores\milvus.py", line 2303, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\langchain_milvus\vectorstores\milvus.py", line 1402, in add_texts
+    return self.add_embeddings(
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\langchain_milvus\vectorstores\milvus.py", line 1511, in add_embeddings
+    self._handle_batch_operation_exception(
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\langchain_milvus\vectorstores\milvus.py", line 1552, in _handle_batch_operation_exception
+    raise e
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\langchain_milvus\vectorstores\milvus.py", line 1503, in add_embeddings
+    res = self.client.insert(
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\milvus_client\milvus_client.py", line 265, in insert
+    raise ex from ex
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\milvus_client\milvus_client.py", line 256, in insert
+    res = conn.insert_rows(
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\decorators.py", line 406, in handler
+    raise e from e
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\decorators.py", line 403, in handler
+    return func(*args, **kwargs)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\decorators.py", line 450, in handler
+    return func(self, *args, **kwargs)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\decorators.py", line 341, in handler
+    raise e from e
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\decorators.py", line 304, in handler
+    return func(*args, **kwargs)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\decorators.py", line 132, in handler
+    raise e from e
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\decorators.py", line 117, in handler
+    return func(self, collection_name, *args, **kwargs)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\client\grpc_handler.py", line 753, in insert_rows
+    request = self._prepare_row_insert_request(
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\client\grpc_handler.py", line 791, in _prepare_row_insert_request
+    return Prepare.row_insert_param(
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\client\prepare.py", line 1109, in row_insert_param
+    return cls._parse_row_request(
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\client\prepare.py", line 847, in _parse_row_request
+    raise DataNotMatchException(
+pymilvus.exceptions.DataNotMatchException: <DataNotMatchException: (code=1, message=Insert missed an field `source` to collection without set nullable==true or set default_value)>
+2026-03-23 16:51:08,387 - agent - ERROR - vector_store.py:145 - [加载知识库]D:\Projects\OGE-Agent\OGE-Agent\data/basic_info\总体介绍.html加载失败：<DataNotMatchException: (code=1, message=Insert missed an field `source` to collection without set nullable==true or set default_value)>
+Traceback (most recent call last):
+  File "D:\Projects\OGE-Agent\OGE-Agent\rag\vector_store.py", line 139, in load_document
+    self.vector_store.add_documents(split_document)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\langchain_milvus\vectorstores\milvus.py", line 2303, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\langchain_milvus\vectorstores\milvus.py", line 1402, in add_texts
+    return self.add_embeddings(
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\langchain_milvus\vectorstores\milvus.py", line 1511, in add_embeddings
+    self._handle_batch_operation_exception(
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\langchain_milvus\vectorstores\milvus.py", line 1552, in _handle_batch_operation_exception
+    raise e
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\langchain_milvus\vectorstores\milvus.py", line 1503, in add_embeddings
+    res = self.client.insert(
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\milvus_client\milvus_client.py", line 265, in insert
+    raise ex from ex
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\milvus_client\milvus_client.py", line 256, in insert
+    res = conn.insert_rows(
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\decorators.py", line 406, in handler
+    raise e from e
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\decorators.py", line 403, in handler
+    return func(*args, **kwargs)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\decorators.py", line 450, in handler
+    return func(self, *args, **kwargs)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\decorators.py", line 341, in handler
+    raise e from e
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\decorators.py", line 304, in handler
+    return func(*args, **kwargs)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\decorators.py", line 132, in handler
+    raise e from e
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\decorators.py", line 117, in handler
+    return func(self, collection_name, *args, **kwargs)
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\client\grpc_handler.py", line 753, in insert_rows
+    request = self._prepare_row_insert_request(
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\client\grpc_handler.py", line 791, in _prepare_row_insert_request
+    return Prepare.row_insert_param(
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\client\prepare.py", line 1109, in row_insert_param
+    return cls._parse_row_request(
+  File "D:\Environment\conda\envs\AI_Agent\lib\site-packages\pymilvus\client\prepare.py", line 847, in _parse_row_request
+    raise DataNotMatchException(
+pymilvus.exceptions.DataNotMatchException: <DataNotMatchException: (code=1, message=Insert missed an field `source` to collection without set nullable==true or set default_value)>
+2026-03-23 17:29:03,443 - agent - INFO - vector_store.py:99 - [加载知识库]D:\Projects\OGE-Agent\OGE-Agent\data/basic_info\oge-develop-guidance.html内容加载成功
+2026-03-23 17:29:49,784 - agent - INFO - vector_store.py:99 - [加载知识库]D:\Projects\OGE-Agent\OGE-Agent\data/basic_info\应用开发.html内容加载成功
+2026-03-23 17:29:50,540 - agent - INFO - vector_store.py:99 - [加载知识库]D:\Projects\OGE-Agent\OGE-Agent\data/basic_info\总体介绍.html内容加载成功
+2026-03-23 17:30:25,735 - agent - INFO - vector_store.py:77 - [加载知识库]D:\Projects\OGE-Agent\OGE-Agent\data/basic_info\oge-develop-guidance.html内容已经存在在知识库内，跳过
+2026-03-23 17:30:25,736 - agent - INFO - vector_store.py:77 - [加载知识库]D:\Projects\OGE-Agent\OGE-Agent\data/basic_info\应用开发.html内容已经存在在知识库内，跳过
+2026-03-23 17:30:25,736 - agent - INFO - vector_store.py:77 - [加载知识库]D:\Projects\OGE-Agent\OGE-Agent\data/basic_info\总体介绍.html内容已经存在在知识库内，跳过
+2026-03-23 20:42:39,446 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-23 20:43:18,691 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-23 20:43:22,688 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：basic_info_summarize
+2026-03-23 20:43:22,689 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': 'OGE平台集成的数据产品'}
+2026-03-23 20:43:25,795 - agent - INFO - middleware.py:24 - [tool monitor]工具basic_info_summarize调用成功
+2026-03-23 20:43:25,797 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-23 20:44:34,268 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-23 20:44:39,400 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：basic_info_summarize
+2026-03-23 20:44:39,400 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': 'OGE平台 LandSat产品 基本信息'}
+2026-03-23 20:44:43,838 - agent - INFO - middleware.py:24 - [tool monitor]工具basic_info_summarize调用成功
+2026-03-23 20:44:43,839 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-23 20:45:21,137 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-23 20:45:26,577 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：basic_info_summarize
+2026-03-23 20:45:26,577 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': 'LandSet产品'}
+2026-03-23 20:45:29,385 - agent - INFO - middleware.py:24 - [tool monitor]工具basic_info_summarize调用成功
+2026-03-23 20:45:29,386 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-23 20:45:36,889 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：basic_info_summarize
+2026-03-23 20:45:36,890 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': 'Landsat产品'}
+2026-03-23 20:45:45,248 - agent - INFO - middleware.py:24 - [tool monitor]工具basic_info_summarize调用成功
+2026-03-23 20:45:45,248 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-03-23 20:47:22,423 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-23 20:47:26,665 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：basic_info_summarize
+2026-03-23 20:47:26,665 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': 'Landsat产品数据数量和时间范围'}
+2026-03-23 20:47:30,354 - agent - INFO - middleware.py:24 - [tool monitor]工具basic_info_summarize调用成功
+2026-03-23 20:47:30,355 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-23 20:49:14,488 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-23 20:49:20,932 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：basic_info_summarize
+2026-03-23 20:49:20,933 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': 'Landsat数据 时间范围 数量'}
+2026-03-23 20:49:24,575 - agent - INFO - middleware.py:24 - [tool monitor]工具basic_info_summarize调用成功
+2026-03-23 20:49:24,576 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-23 20:50:54,724 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-23 20:50:57,939 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：basic_info_summarize
+2026-03-23 20:50:57,939 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': 'OGE平台Landsat产品数据景数和时间范围'}
+2026-03-23 20:51:00,461 - agent - INFO - middleware.py:24 - [tool monitor]工具basic_info_summarize调用成功
+2026-03-23 20:51:00,462 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-23 20:53:48,646 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-23 20:53:50,820 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：basic_info_summarize
+2026-03-23 20:53:50,820 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': 'OGE平台中Landsat产品数据的景数和时间范围'}
+2026-03-23 20:53:53,773 - agent - INFO - middleware.py:24 - [tool monitor]工具basic_info_summarize调用成功
+2026-03-23 20:53:53,774 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-23 21:01:28,327 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-23 21:01:36,543 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：basic_info_search
+2026-03-23 21:01:36,543 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': 'OGE平台 Landsat产品数据 景数 时间范围'}
+2026-03-23 21:01:39,754 - agent - INFO - middleware.py:24 - [tool monitor]工具basic_info_search调用成功
+2026-03-23 21:01:39,756 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-23 23:30:55,903 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-23 23:30:58,188 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：data_search
+2026-03-23 23:30:58,189 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': 'Landsat产品数据景数和时间范围'}
+2026-03-23 23:31:01,048 - agent - ERROR - middleware.py:31 - 工具data_search调用失败，原因：invalid syntax (<string>, line 1)
+2026-03-23 23:38:49,335 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-23 23:38:56,151 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：data_search
+2026-03-23 23:38:56,152 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': 'Landsat产品数据景数和时间范围'}
+2026-03-23 23:39:02,768 - agent - ERROR - middleware.py:31 - 工具data_search调用失败，原因：invalid syntax (<string>, line 1)
+2026-03-23 23:51:36,908 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-23 23:51:40,644 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：data_search
+2026-03-23 23:51:40,645 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': 'Landsat'}
+2026-03-23 23:51:40,645 - agent - ERROR - middleware.py:31 - 工具data_search调用失败，原因：name 'Landsat' is not defined

@@ -1,0 +1,38 @@
+const hTags = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+const listRoot = document.querySelector(".markdown-sidebar");
+hTags.forEach((hTag) => {
+  hTag.id = hTag.textContent.trim();
+  hTag.setAttribute("data-tag-id",Math.random().toString(36).substr(2, 9));
+});
+Array.from(hTags).forEach(hTag => {
+  const tagId = hTag.getAttribute("data-tag-id");
+  listRoot.innerHTML += `<li id="${hTag.tagName.toLowerCase()}"><span id="${hTag.id}" data-tag-id="${tagId}">${hTag.id}</span></li>`;
+});
+
+const preview = document.querySelector(".markdown-preview");
+const sidebars = document.querySelector(".markdown-sidebar");
+const tagsHeightMap = {};
+hTags.forEach((hTag) => {
+  const tagId = hTag.getAttribute("data-tag-id");
+
+  tagsHeightMap[tagId] = hTag.offsetTop;
+});
+
+sidebars.addEventListener("click", (e) => {
+  if (e.target.tagName === "SPAN") {
+    const target = e.target.getAttribute("data-tag-id");
+    window.scrollTo({ top: tagsHeightMap[target], behavior: "smooth" });
+  }
+});
+
+document.addEventListener("scroll", () => {
+  const previewScrollTop = window.scrollY;
+  const arrs = Object.entries(tagsHeightMap);
+  for (let i = 0; i < arrs.length; i++) {
+    if (previewScrollTop <= arrs[i][1]) {
+      sidebars.querySelector(".active")?.classList.remove("active");
+      sidebars.querySelector(`[data-tag-id="${arrs[i][0]}"]`)?.classList.add("active");
+      break;
+    }
+  }
+});

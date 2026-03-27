@@ -1,0 +1,12 @@
+collection_name: oge
+persist_directory: rag/chroma_db
+k: 3
+data_path: data/data_center
+md5_hex_store: md5.text
+allow_knowledge_file_type: ["txt", "pdf", "html"]
+
+chunk_size_basic: 500
+chunk_overlap_basic: 50
+chunk_size_data: 100
+chunk_overlap_data: 0
+separators: ["\n"]

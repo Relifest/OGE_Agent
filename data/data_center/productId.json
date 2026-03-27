@@ -1,0 +1,434 @@
+[
+    {
+        "id": 105,
+        "name": "专题产品",
+        "nameEn": "topic_product",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "CN_FCH30_2020",
+                "id": 503
+            },
+            {
+                "name": "BaoxiePlankRoad",
+                "id": 1001
+            },
+            {
+                "name": "digital-legacy-jiayuguan",
+                "id": 1002
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "name": "珞珈系列产品",
+        "nameEn": "Luojia series products",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "LJ3II_PAN_MSS",
+                "id": 463
+            },
+            {
+                "name": "LJ3II_MSS",
+                "id": 339
+            },
+            {
+                "name": "LJ3II_HSI",
+                "id": 346
+            },
+            {
+                "name": "LJ3II_PAN",
+                "id": 345
+            },
+            {
+                "name": "LJ4I_HSI_17B",
+                "id": 462
+            },
+            {
+                "name": "LJ4I_HSI_5B",
+                "id": 461
+            },
+            {
+                "name": "LJ01_L2",
+                "id": 34
+            },
+            {
+                "name": "LJ4I_UVI",
+                "id": 459
+            },
+            {
+                "name": "LJ4I_HSI_32B",
+                "id": 460
+            }
+        ]
+    },
+    {
+        "id": 48,
+        "name": "Landsat系列产品",
+        "nameEn": "Landsat series products",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "LC09_C02_L1",
+                "id": 454
+            },
+            {
+                "name": "LC09_C02_L2",
+                "id": 456
+            },
+            {
+                "name": "LC08_C02_L1",
+                "id": 453
+            },
+            {
+                "name": "LC08_C02_L2",
+                "id": 455
+            },
+            {
+                "name": "LT05_L1TP_C02_T1",
+                "id": 181
+            },
+            {
+                "name": "LC08_L1TP_C02_T1",
+                "id": 172
+            },
+            {
+                "name": "LC08_L1GT_C02_T2",
+                "id": 174
+            },
+            {
+                "name": "LC08_L1T",
+                "id": 175
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "name": "Sentinel系列产品",
+        "nameEn": "Sentinel series products",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "S2_MSIL1C",
+                "id": 1004
+            },
+            {
+                "name": "S2_MSIL2A",
+                "id": 1005
+            },
+            {
+                "name": "S2B_MSIL1C",
+                "id": 1006
+            },
+            {
+                "name": "S2A_MSIL1C",
+                "id": 1007
+            },
+            {
+                "name": "S2A_MSIL2A",
+                "id": 1008
+            }
+        ]
+    },
+    {
+        "id": 107,
+        "name": "东方慧眼系列产品",
+        "nameEn": "DFHY Series Product",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "DFHY01_L4",
+                "id": 1009
+            },
+            {
+                "name": "DFHY01_L5",
+                "id": 1010
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "name": "MODIS系列产品",
+        "nameEn": "MODIS series products",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "MODIS09A1",
+                "id": 1011
+            },
+            {
+                "name": "MODIS13Q1",
+                "id": 1012
+            },
+            {
+                "name": "MODIS13A1",
+                "id": 1013
+            },
+            {
+                "name": "MODIS09Q1",
+                "id": 1014
+            },
+            {
+                "name": "MOD13Q1",
+                "id": 1015
+            },
+            {
+                "name": "MOD13A1",
+                "id": 1016
+            },
+            {
+                "name": "MYD09Q1",
+                "id": 1017
+            },
+            {
+                "name": "MOD09A1",
+                "id": 1018
+            },
+            {
+                "name": "MOD09Q1",
+                "id": 1019
+            },
+            {
+                "name": "MYD09A1",
+                "id": 1020
+            },
+            {
+                "name": "MYD13A1",
+                "id": 1021
+            }
+        ]
+    },
+    {
+        "id": 88,
+        "name": "矢量基础数据",
+        "nameEn": "data_product_vector",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "iceland_poi",
+                "id": 1022
+            },
+            {
+                "name": "iceland_water",
+                "id": 1023
+            },
+            {
+                "name": "iceland_road",
+                "id": 1024
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "name": "高分系列产品",
+        "nameEn": "High score series products",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "GF1_L1_PMS2_EO",
+                "id": 1025
+            },
+            {
+                "name": "GF1_L1_PMS1_EO",
+                "id": 1026
+            },
+            {
+                "name": "GF2_L1_PMS1_EO",
+                "id": 1027
+            },
+            {
+                "name": "GF2_L1_PMS2_EO",
+                "id": 1028
+            },
+            {
+                "name": "GF1_ARD_WFV2_EO",
+                "id": 1029
+            },
+            {
+                "name": "GF1_ARD_WFV1_EO",
+                "id": 1030
+            },
+            {
+                "name": "GF1_ARD_WFV4_EO",
+                "id": 1031
+            },
+            {
+                "name": "GF6_ARD_WFV_EO",
+                "id": 1032
+            },
+            {
+                "name": "GF1_ARD_WFV3_EO",
+                "id": 1033
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "name": "全球DEM产品",
+        "nameEn": "Global DEM products",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "ALOS_PALSAR_DEM12.5",
+                "id": 1034
+            },
+            {
+                "name": "ASTER_GDEM_DEM30",
+                "id": 1035
+            }
+        ]
+    },
+    {
+        "id": 47,
+        "name": "DOM产品",
+        "nameEn": "DOM products",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "Global_DOM10",
+                "id": 1036
+            }
+        ]
+    },
+    {
+        "id": 50,
+        "name": "GISA系列产品",
+        "nameEn": "GISA series products",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "GISA2.0",
+                "id": 1037
+            }
+        ]
+    },
+    {
+        "id": 51,
+        "name": "定量遥感产品",
+        "nameEn": "Quantitative remote sensing products",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "LC_Ref",
+                "id": 1038
+            },
+            {
+                "name": "LC_Fmask4",
+                "id": 1039
+            }
+        ]
+    },
+    {
+        "id": 46,
+        "name": "USGS_EROS系列",
+        "nameEn": "USGS_ EROS series",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "USGS_EROS-Aerial_Photograp...",
+                "id": 1040
+            }
+        ]
+    },
+    {
+        "id": 45,
+        "name": "北京2号系列产品",
+        "nameEn": "Beijing No.2 series products",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "BJ2_DeepLearning",
+                "id": 1041
+            }
+        ]
+    },
+    {
+        "id": 44,
+        "name": "ERA5系列产品",
+        "nameEn": "ERA5 series products",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "ERA5_2mTemperature_China_...",
+                "id": 1042
+            },
+            {
+                "name": "ERA5_TotalPrecipitation_China...",
+                "id": 1043
+            }
+        ]
+    },
+    {
+        "id": 43,
+        "name": "基础栅格数据",
+        "nameEn": "Basic raster data",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "WHU-OPT-SAR",
+                "id": 1044
+            }
+        ]
+    },
+    {
+        "id": 42,
+        "name": "GPM系列产品",
+        "nameEn": "GPM series products",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "GPM_Precipitation_China_Mon...",
+                "id": 1045
+            }
+        ]
+    },
+    {
+        "id": 41,
+        "name": "ARD产品",
+        "nameEn": "ARD products",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "The_Harmonized_GF1-WFV_an...",
+                "id": 1046
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "name": "HiGLASS系列产品",
+        "nameEn": "HIGLASS series products",
+        "nodeType": 0,
+        "children": [
+            {
+                "name": "LC08_L1TP_Hubei1420_Fmask4",
+                "id": 1047
+            },
+            {
+                "name": "LC08_L1TP_Hubei1420_albedo",
+                "id": 1048
+            },
+            {
+                "name": "LC08_L1TP_Hubei1420_sr",
+                "id": 1049
+            },
+            {
+                "name": "LC08_L1TP_Hubei1420_FVC",
+                "id": 1050
+            },
+            {
+                "name": "LC08_L1TP_Hubei1420_NDVI",
+                "id": 1051
+            },
+            {
+                "name": "LC08_L1TP_Hubei1420_AOD",
+                "id": 1052
+            },
+            {
+                "name": "HiGLASS_SR_Landsat_30m",
+                "id": 1053
+            }
+        ]
+    }
+]
