@@ -2,9 +2,9 @@ collection_name: oge
 # 核心修正：移除 default: default，仅保留连接参数
 connection_args:
   uri: your milvus
-  db_name: **
-  user: **
-  password: **
+  db_name: *
+  user: *
+  password: *
 auto_id: True
 # 新增必传参数：向量维度（与你的 embed_model 输出一致，如 text-embedding-v4 是 1024）
 vector_dim: 1024
